@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+requests = "*"
+h5py = "*"
+bs4 = "*"
+matplotlib = "*"
+soundfile = "*"
+numpy = "*"
+scipy = "*"
+astropy = "*"
+lxml = "*"
+openpyxl = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
