@@ -43,6 +43,7 @@ last_gw = gw_data.get_gwave(last_gw_name)
 
 last_gw
 ```
+result:
 ```sh
 {'strain': array([-1.20377769e-18, -1.23316083e-18, -1.19155622e-18, ...,
         -7.84331557e-19, -7.46261544e-19, -7.87365720e-19]),
@@ -64,3 +65,44 @@ ax, fig = plt.subplots(figsize=(20,12))
 plt.title(last_gw_name)
 plt.plot(strain)
 ```
+result:
+<br/>
+
+<img src='https://raw.githubusercontent.com/reinanbr/gwaves/main/img/plot_1.png'>
+<br/>
+
+### plotting the more detector's from same signal:
+```py
+gw_data.detectors
+```
+resut:
+```sh
+['L1', 'H1', 'V1']
+```
+getting the strain's
+```py
+strain_L1 = strain
+
+strain_H1 = gw_data.get_gwave(last_gw_name,detector='H1')['strain']
+
+strain_V1 = gw_data.get_gwave(last_gw_name,detector='V1')['strain']
+```
+ploting:
+```py
+ax,fig = plt.subplots(figsize=(32,14))
+
+t = np.linspace(0,32,len(strain_L1))
+
+plt.plot(t,strain_L1,label='L1',c='blue')
+
+plt.plot(t,strain_V1,label='V1',c='green')
+
+plt.plot(t,strain_H1,label='H1',c='red')
+
+plt.legend()
+```
+result:
+<br/>
+
+<img src='https://raw.githubusercontent.com/reinanbr/gwaves/main/img/plot2.png'>
+
