@@ -53,7 +53,7 @@ result:
  'size': 4030830,
  'detector': 'L1'}
 ```
-## ploting:
+## plotting:
 ```py
 import matplotlib.pyplot as plt
 plt.style.use('seaborn')
@@ -72,6 +72,7 @@ result:
 <br/>
 
 ### plotting the more detector's from same signal:
+the detector's used in the data:
 ```py
 gw_data.detectors
 ```
@@ -87,7 +88,7 @@ strain_H1 = gw_data.get_gwave(last_gw_name,detector='H1')['strain']
 
 strain_V1 = gw_data.get_gwave(last_gw_name,detector='V1')['strain']
 ```
-ploting:
+plotting:
 ```py
 ax,fig = plt.subplots(figsize=(32,14))
 
@@ -106,3 +107,21 @@ result:
 
 <img src='https://raw.githubusercontent.com/reinanbr/gwaves/main/img/plot2.png'>
 
+<br/>
+
+
+### plotting the psd (Power Signal Density):
+
+```py
+ax,fig = plt.subplots(figsize=(32,14))
+
+gw_data.plot_psd_from_gwname(last_gw_name,detector="L1")
+
+gw_data.plot_psd_from_gwname(last_gw_name,detector="V1")
+
+gw_data.plot_psd_from_gwname(last_gw_name,detector="H1")
+```
+
+result:
+<br/>
+<img src='https://raw.githubusercontent.com/reinanbr/gwaves/main/img/plot3.png'>
