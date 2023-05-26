@@ -8,8 +8,11 @@
 <hr>
 
 
+
 </div>
+
 ## installing:
+
 ```sh
 pip3 install gwaves -U
 ```

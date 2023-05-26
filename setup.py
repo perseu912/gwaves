@@ -1,11 +1,11 @@
 from setuptools import setup
 from setuptools import find_packages, setup
 
-with open("README.rst", "r") as fh:
+with open("README.md", "r") as fh:
     readme = fh.read()
 
 setup(name='gwaves',
-    version='0.0.3',
+    version='0.0.3.1',
     url='https://github.com/perseu912/gwaves',
     license='MIT License',
     author='Reinan Br',
