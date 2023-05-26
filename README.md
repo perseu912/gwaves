@@ -1,6 +1,14 @@
-# gwaves
-A lib from python for works with gravitational waves data
+<div align='center'>
+ <h1>gwaves</h1>
+<p>A python lib for works with gravitational waves data</p>
+<img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/reinanbr/gwaves?logo=codefactor"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability-percentage/reinanbr/dreams"><img alt="GitHub Pipenv locked Python version" src="https://img.shields.io/github/pipenv/locked/python-version/reinanbr/gwaves">
+<br/>
+<a href='https://pypi.org/project/dreams/'><img src='https://img.shields.io/pypi/v/gwaves'></a><img alt="PyPI - License" src="https://img.shields.io/pypi/l/gwaves?color=b"><a href="https://doi.org/10.5281/zenodo.7966690"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7966690.svg" alt="DOI"></a>
 
+<hr>
+
+
+</div>
 ## installing:
 ```sh
 pip3 install gwaves -U

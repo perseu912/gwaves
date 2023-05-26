@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
     readme = fh.read()
 
 setup(name='gwaves',
-    version='0.0.1b',
+    version='0.0.3',
     url='https://github.com/perseu912/gwaves',
     license='MIT License',
     author='Reinan Br',
