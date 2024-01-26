@@ -136,3 +136,10 @@ gw_data.plot_psd_from_gwname(last_gw_name,detector="H1")
 result:
 <br/>
 <img src='https://raw.githubusercontent.com/reinanbr/gwaves/main/img/plot3.png'>
+
+
+
+
+
+
+<img src="https://reysofts.com.br/engine/libs/save_table_access_libs.php?lib_name=gwaves">
